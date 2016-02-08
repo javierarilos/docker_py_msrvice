@@ -1,11 +1,6 @@
 from bottle import get, post, run, request, response
 from json import dumps
 
-"""
-curl -X POST -H 'Content-Type: application/json' -d '{"name": "alan", "born": 1903}' http://127.0.0.1:8888/customers
-curl http://127.0.0.1:8888/customers/alan
-"""
-
 customers = {}
 
 @get('/customers')
